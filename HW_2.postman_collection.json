@@ -82,8 +82,9 @@
 							"// Вывести в консоль параметр family из response.\r",
 							"console.log(jsonData.family);\r",
 							"// Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)\r",
+							"var request = request.data\r",
 							"pm.test(\"Salary 1.5 year = salary*4\", function ()  {\r",
-							"    pm.expect(jsonData.family.u_salary_1_5_year).to.eql(jsonData.salary*4);\r",
+							"    pm.expect(jsonData.family.u_salary_1_5_year).to.eql(request.salary*4);\r",
 							"});"
 						],
 						"type": "text/javascript"
