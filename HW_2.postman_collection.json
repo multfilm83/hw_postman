@@ -85,7 +85,8 @@
 							"var request = request.data\r",
 							"pm.test(\"Salary 1.5 year = salary*4\", function ()  {\r",
 							"    pm.expect(jsonData.family.u_salary_1_5_year).to.eql(request.salary*4);\r",
-							"});"
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
